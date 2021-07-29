@@ -1,0 +1,143 @@
+.navbar {
+	color: #ffffff;
+	background-color: #fff;
+	padding: 0rem 3rem;
+}
+.nav-items {
+	font-size: 18px;
+	margin: 10px;
+}
+
+.hero {
+	color: #535353;
+	background-color: rgb(233 209 255);
+	height: 30rem;
+}
+.hero-img {
+	height: 480px;
+	width: 103%;
+	object-fit: contain;
+}
+.hero-main {
+	text-align: center;
+	padding-top: 100px;
+}
+.hero-special {
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+}
+.hero-special-1 {
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+}
+.hero-special::before {
+	position: absolute;
+	top: 50%;
+	right: -14px;
+	width: 1px;
+	height: 61px;
+	content: "";
+	transform: translateY(-50%);
+	background-color: #d5d4d4;
+}
+h2 {
+	font-family: "poppins", sans-serif;
+}
+h5 {
+	font-family: "poppins", sans-serif;
+}
+h1 {
+	font-family: "poppins", sans-serif;
+}
+p {
+	font-family: "poppins", sans-serif;
+}
+h4 {
+	font-family: "poppins", sans-serif;
+	padding: 10px 60px 20px 60px;
+}
+.hero-btn {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center !important;
+	vertical-align: middle;
+	touch-action: manipulation;
+	outline: none;
+	cursor: pointer;
+	background-image: none;
+	white-space: nowrap;
+	min-width: 160px;
+	padding: 10px 16px;
+	font-size: 1em;
+	font-style: initial;
+	line-height: 1.846;
+	border-radius: 4px;
+	user-select: none;
+	transition: all 0.4s;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid #505050;
+	color: #000000;
+	background-color: transparent;
+}
+.hero-btn:hover {
+	background-color: #a749ff;
+	color: #ffffff;
+}
+.container {
+	position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+	position: absolute;
+	bottom: 15rem;
+	right: 16rem;
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	display: grid;
+}
+.text-block-h1 {
+	font-family: "poppins", sans-serif;
+	color: #000;
+	font-size: 72px;
+	text-align: center;
+}
+.text-block-h3 {
+	font-family: "poppins", sans-serif;
+	font-size: 18px;
+	margin: 0 0 24px;
+	color: #010101;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.text-block-h2 {
+	font-family: "poppins", sans-serif;
+	font-size: 30px;
+	color: #010101;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.footer-div p {
+	font-size: 14px;
+	color: #505050;
+}
+@media only screen and (max-width: 600px) {
+	.hero-img {
+		display: none;
+	}
+	.navbar {
+		padding: 15px;
+	}
+	.hero-special {
+		display: none;
+	}
+}

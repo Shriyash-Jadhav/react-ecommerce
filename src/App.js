@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import React, { Fragment, useEffect } from "react";
 import './App.css';
-
+import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom";
+import ProductList from './Components/ProductList';
+import SingleProduct from './Components/SingleProduct';
+import AddToCart from "./Components/AddToCart";
+import Contact from "./Components/Contact";
+import About from "./Components/About";
+import NotFound from "./Components/NotFound";
+import { useStoreActions } from "easy-peasy";
 function App() {
+  const setCart = useStoreActions(actions => actions.setCart);
+  useEffect(() => {
+    setCart(JSON.parse(localStorage.getItem("cart")) || []);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact render={() => <Redirect to="/home" />} />
+        <Route path="/home" exact component={ProductList} />
+        <Route path="/home/:id" exact component={SingleProduct} />
+        <Route path="/cart" exact component={AddToCart} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/about" exact component={About} />
+        <Route path="*" exact component={NotFound} />
+
+      </Switch>
+    </BrowserRouter>
+
+
   );
 }
 
