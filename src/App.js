@@ -7,6 +7,7 @@ import AddToCart from "./Components/AddToCart";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
 import NotFound from "./Components/NotFound";
+import MyAccount from "./Components/MyAccount";
 import { useStoreActions } from "easy-peasy";
 function App() {
   const setCart = useStoreActions(actions => actions.setCart);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/cart" exact component={AddToCart} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/about" exact component={About} />
+        <Route path="/my-account" exact component={MyAccount} />
         <Route path="*" exact component={NotFound} />
 
       </Switch>

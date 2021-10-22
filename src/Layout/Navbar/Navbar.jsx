@@ -82,6 +82,15 @@ const Example = (props) => {
 								Blogs
 							</NavLink>
 						</NavItem>
+						<NavItem>
+							<NavLink
+								className="nav-items"
+								style={{ color: "black" }}
+								href="/my-account"
+							>
+								My Account
+							</NavLink>
+						</NavItem>
 
 						<NavItem>
 							<NavLink

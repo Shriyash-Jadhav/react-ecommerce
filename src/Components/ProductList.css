@@ -205,6 +205,23 @@
 	letter-spacing: 1rem;
 	color: #a749ff;
 }
+.my-account-container {
+	margin: 8rem 20rem;
+}
+.my-account-h6 {
+	background-color: #f9f9f9;
+	font-size: 15px;
+	font-weight: 500;
+	margin: 0;
+	text-transform: uppercase;
+	color: #242424;
+	padding: 5px;
+	display: block;
+	position: relative;
+}
+.my-account-card {
+	padding: 3rem 0 4rem 0.875rem;
+}
 @media only screen and (max-width: 600px) {
 	.product-list-offer {
 		margin: 0px 0px;
@@ -227,5 +244,8 @@
 		font-weight: 700;
 		letter-spacing: 1rem;
 		color: #a749ff;
+	}
+	.my-account-container {
+		margin: 5px;
 	}
 }
